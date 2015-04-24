@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Accordion - Default functionality</title>
+<!--   <link rel="stylesheet" href="script/jquery-ui-themes-1.10.4/themes/smoothness/jquery-ui.css"> -->
+<!--  <script src="script/jquery-1.11.2.min.js"></script> -->
+<!--   <script src="../script/jquery-ui-1.11.4/jquery-ui.js"></script> -->
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #accordion-resizer {
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+  }
+  </style>
+  <script src="ajax.js" type="text/javascript"></script>
+  <script>
+	var data;
+  </script>
+
+</head>
+<body>
+ 
+<div id="accordion">
+  <h4>Search</h4>
+  <div style="display: block;height:300px;overflow: auto;">
+    <p>
+    <div>
+	<table>
+	<tr>
+  <td>
+  Search parcel:
+  </td>
+		  <td>
+		  <form id="serchForm">
+		  <input id="serchTxt" type="text" style="width:230px;height: 20px;" name="fname" placeholder="Enter Parcel Id or Farmer Name..">
+		   </form>
+		   </td>
+		   <td>
+			<input onclick="makeRequest()" id="searchButton" type="image" style="width:50px;height: 50px;" src="/Demo/images/search.png" alt="Submit">
+			</td>
+			
+			</tr>
+			<!--<tr>
+			<button type="button" onclick="makeRequest()">Say Hello!</button>
+			</tr>-->
+			
+			</table>
+	
+	</div>
+
+	<div id="tableSerch">
+	
+	</div>
+    </p>
+  </div>
+  <h3>Category</h3>
+  <div style="display: block;height:300px;overflow: auto;">
+    <p>
+
+    </p>
+  </div>
+  <h3>Soil Nutrient Details</h3>
+  <div style="display: block;height:300px;overflow: auto;align-content: center;">
+    <p>
+
+    </p>
+	<h2 style="align-content: center;">Chemical Details</h2>
+    <div id="chartContainer" style="height:30px; width:25%;">
+	</div>
+  </div>
+  <h3>Owner Details</h3>
+  <div>
+    <p>
+		
+		   
+			<image id="Farm_Img" style="width:150px;height:150px;align-content: center;letter-spacing: 10 px;padding-left: 166px;" src="/Demo/images/farmer-1.png">
+			<div id="farmDetail" style="padding-left: 135px;">
+			</div>
+			
+		
+			<!--<tr>
+			<button type="button" onclick="makeRequest()">Say Hello!</button>
+			</tr>-->
+			
+		</table>
+    </p>
+    <p>
+    
+    </p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
